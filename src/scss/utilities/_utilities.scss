@@ -1,0 +1,32 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    "font-title": (
+      property: font-family,
+      class: font,
+      values: (
+        bebas: $font-family-bebas,
+        josefin: $font-family-josefin,
+        geometos: $font-family-geometos,
+      ),
+    ),
+    "font-weight": (
+      property: font-weight,
+      class: fw,
+      values: (
+        black: $font-weight-black,
+        ultra: $font-weight-ultra,
+      ),
+    ),
+    "background-color": (
+      property: background-color,
+      class: bg,
+      values: $custom-colors,
+    ),
+    "text-color": (
+      property: color,
+      class: text,
+      values: $custom-colors,
+    ),
+  )
+);
