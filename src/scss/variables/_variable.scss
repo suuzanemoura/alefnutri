@@ -1,0 +1,82 @@
+@import "../vendor/vendor";
+
+@font-face {
+  font-family: "Geometos Neue";
+  src: url("../../assets/fonts/geometos-neue-light.otf");
+  src: url("../../assets/fonts/geometos-neue-light.otf") format("opentype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Geometos Neue";
+  src: url("../../assets/fonts/geometos-neue.otf");
+  src: url("../../assets/fonts/geometos-neue.otf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Geometos Neue";
+  src: url("../../assets/fonts/geometos-neue-bold.otf");
+  src: url("../../assets/fonts/geometos-neue-bold.otf") format("opentype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Geometos Neue";
+  src: url("../../assets/fonts/geometos-neue-extrabold.otf");
+  src: url("../../assets/fonts/geometos-neue-extrabold.otf") format("opentype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Geometos Neue";
+  src: url("../../assets/fonts/geometos-neue-black.otf");
+  src: url("../../assets/fonts/geometos-neue-black.otf") format("opentype");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Geometos Neue";
+  src: url("../../assets/fonts/geometos-neue-ultra.otf");
+  src: url("../../assets/fonts/geometos-neue-ultra.otf]") format("opentype");
+  font-weight: 900;
+}
+
+$font-family-sans-serif: "PT Sans", sans-serif;
+$font-family-monospace: "PT Mono", monospace;
+$font-family-bebas: "Bebas Neue", sans-serif;
+$font-family-josefin: "Josefin Sans", sans-serif;
+$font-family-geometos: "Geometos Neue", sans-serif;
+$font-weight-black: 800;
+$font-weight-ultra: 900;
+
+$font-family-base: var(--#{$prefix}font-sans-serif);
+$font-family-code: var(--#{$prefix}font-monospace);
+
+$headings-font-family: $font-family-geometos;
+$headings-font-weight: $font-weight-black;
+
+$custom-colors: (
+  "id-alef-blue-100": #1458cc,
+  "id-alef-blue-200": #1148a7,
+  "id-alef-blue-300": #0d3882,
+  "id-alef-blue-400": #09285d,
+  "id-alef-blue-500": #051735,
+  "id-alef-red-100": #ff3333,
+  "id-alef-red-200": #f50000,
+  "id-alef-red-300": #cd0001,
+  "id-alef-red-400": #af0000,
+  "id-alef-red-500": #8f0000,
+  "id-alef-gray-100": #d4d5d5,
+  "id-alef-gray-200": #c1c2c2,
+  "id-alef-gray-300": #adaeae,
+  "id-alef-gray-400": #989a9a,
+  "id-alef-gray-500": #838686,
+  "id-alef-lightblue-100": #9cdcfc,
+  "id-alef-lightblue-200": #74cefb,
+  "id-alef-lightblue-300": #4cc0fa,
+  "id-alef-lightblue-400": #23b2f9,
+  "id-alef-lightblue-500": #0694db,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
