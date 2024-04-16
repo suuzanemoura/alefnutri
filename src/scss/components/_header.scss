@@ -1,0 +1,33 @@
+@import "../variables/variable";
+
+header {
+  img {
+    width: 14rem;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+.offcanvas-title {
+  width: 4rem;
+  height: auto;
+}
+
+.nav-link {
+  display: flex !important;
+  justify-content: space-between !important;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: map-get(
+      $custom-colors,
+      "id-alef-lightblue-500"
+    ) !important;
+    text-underline-offset: 0.5rem;
+    text-decoration-thickness: 0.15rem;
+  }
+}
+
+.bi {
+  color: #ff3333 !important;
+}
