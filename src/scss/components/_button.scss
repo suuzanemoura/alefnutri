@@ -1,0 +1,17 @@
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    @include button-variant(
+      $value,
+      $value,
+      $hover-background: lighten($value, 15%),
+      $hover-border: lighten($value, 15%),
+      $active-background: lighten($value, 20%),
+      $active-border: lighten($value, 20%)
+    );
+  }
+}
+
+.btn-consulta {
+  font-size: 1.15rem !important;
+  margin: 0.5rem 0 !important;
+}
