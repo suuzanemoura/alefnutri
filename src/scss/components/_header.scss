@@ -1,4 +1,4 @@
-@import "../variables/variable";
+@import "../vendor/vendor";
 
 header {
   img {
@@ -24,7 +24,6 @@ header {
       "id-alef-lightblue-500"
     ) !important;
     text-underline-offset: 0.5rem;
-    text-decoration-thickness: 0.15rem;
   }
 }
 

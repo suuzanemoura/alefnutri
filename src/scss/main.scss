@@ -1,7 +1,6 @@
-@import "./mixins/common-mixins";
 @import "./variables/variable";
-@import "./pages/pages";
-@import "./components/components";
-
-@import "./vendor/vendor";
 @import "./utilities/utilities";
+@import "./mixins/common-mixins";
+@import "./components/components";
+@import "./pages/pages";
+@import "./vendor/vendor";
