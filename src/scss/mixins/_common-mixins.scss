@@ -1,7 +1,1 @@
-@import "../vendor/vendor";
-
-@mixin container($color, $padding, $width) {
-  background-color: $color;
-  padding: $padding;
-  width: $width;
-}
+@import "../../../node_modules/bootstrap/scss/mixins";
