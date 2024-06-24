@@ -49,6 +49,13 @@ $custom-spacers: (
   10: $spacer * 8,
 );
 
+$custom-font-sizes: (
+  7: $font-size-base * 0.875,
+  8: $font-size-base * 0.75,
+  9: $font-size-base * 0.65,
+  10: $font-size-base * 0.5,
+);
+
 $theme-colors: map-merge($theme-colors, $custom-colors);
 $spacers: map-merge($spacers, $custom-spacers);
 
@@ -57,3 +64,20 @@ $navbar-light-active-color: #fff;
 $navbar-light-hover-color: rgba(255, 255, 255, 0.8);
 $btn-padding-y: 0.5rem;
 $btn-font-size: 1.15rem;
+
+$custom-grid-breakpoints: (
+  2xs: 360px,
+);
+
+$custom-container-max-widths: (
+  2xs: 300px,
+);
+
+$grid-breakpoints: map-merge(
+  $map1: $grid-breakpoints,
+  $map2: $custom-grid-breakpoints,
+);
+$container-max-widths: map-merge(
+  $map1: $container-max-widths,
+  $map2: $custom-container-max-widths,
+);

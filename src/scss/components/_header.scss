@@ -1,10 +1,12 @@
-@import "../vendor/vendor";
-
 header {
   img {
-    width: 14rem;
-    height: auto;
+    width: auto;
+    max-width: 14rem;
     object-fit: contain;
+
+    @media (max-width: 360px) {
+      max-width: 9rem;
+    }
   }
 }
 
@@ -28,5 +30,5 @@ header {
 }
 
 .bi {
-  color: #ff3333 !important;
+  color: #ff3333;
 }

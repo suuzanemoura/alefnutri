@@ -4,7 +4,7 @@ import { navBarConfig } from "../../config/header";
 export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg">
-      <div className="container-fluid p-4 px-lg-6 px-xl-10">
+      <div className="container-fluid p-3 p-2xs-4 px-lg-6 px-xl-10">
         <HashLink
           smooth
           to={navBarConfig.link}
@@ -12,6 +12,7 @@ export default function Navbar() {
           <img
             src={navBarConfig.img}
             alt={navBarConfig.alt}
+            className=""
           />
         </HashLink>
 
@@ -87,7 +88,7 @@ export default function Navbar() {
                 className="d-flex gap-2 justify-content-center align-items-center text-decoration-none text-white text-uppercase"
               >
                 {navBarConfig.button.title}
-                <i className={`bi ${navBarConfig.button.icon} text-white`} />
+                <i className={`text-white bi ${navBarConfig.button.icon}`} />
               </a>
             </button>
           </div>
