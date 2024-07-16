@@ -3,8 +3,8 @@ import { navBarConfig } from "../../config/header";
 
 export default function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg">
-      <div className="container-fluid p-3 p-2xs-4 px-lg-6 px-xl-10">
+    <nav className="navbar navbar-expand-lg z-3">
+      <div className="container-fluid p-2 p-sm-3 px-lg-6 px-xl-10">
         <HashLink
           smooth
           to={navBarConfig.link}

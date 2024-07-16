@@ -5,6 +5,8 @@ $body-bg: #051735;
 $body-color: #fff;
 $emphasis-color: #fff;
 
+$bg-texture: "/src/assets/AlefRodriguesNutricionista_Textura.png";
+
 $font-family-sans-serif: "PT Sans", sans-serif;
 $font-family-monospace: "PT Mono", monospace;
 $font-family-bebas: "Bebas Neue", sans-serif;
@@ -15,7 +17,7 @@ $font-weight-ultra: 900;
 $font-family-base: $font-family-sans-serif;
 $font-family-code: $font-family-monospace;
 
-$headings-font-family: $font-family-josefin;
+$headings-font-family: $font-family-sans-serif;
 $headings-font-weight: $font-weight-black;
 
 $custom-colors: (
@@ -56,6 +58,8 @@ $custom-font-sizes: (
   10: $font-size-base * 0.5,
 );
 
+$h1-font-size: $font-size-base * 2.7;
+
 $theme-colors: map-merge($theme-colors, $custom-colors);
 $spacers: map-merge($spacers, $custom-spacers);
 
@@ -64,20 +68,3 @@ $navbar-light-active-color: #fff;
 $navbar-light-hover-color: rgba(255, 255, 255, 0.8);
 $btn-padding-y: 0.5rem;
 $btn-font-size: 1.15rem;
-
-$custom-grid-breakpoints: (
-  2xs: 360px,
-);
-
-$custom-container-max-widths: (
-  2xs: 300px,
-);
-
-$grid-breakpoints: map-merge(
-  $map1: $grid-breakpoints,
-  $map2: $custom-grid-breakpoints,
-);
-$container-max-widths: map-merge(
-  $map1: $container-max-widths,
-  $map2: $custom-container-max-widths,
-);

@@ -5,3 +5,40 @@ h1 {
 .bi-list {
   font-size: 1.5rem;
 }
+
+.gradient-radial-1 {
+  filter: blur(4rem);
+  top: 0;
+  left: calc(0% - 10rem);
+  z-index: 3;
+  overflow: hidden;
+}
+
+.gradient-radial-2 {
+  filter: blur(4rem);
+  bottom: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.gradient-radial {
+  aspect-ratio: 12/5;
+  width: 35rem;
+  opacity: 0.25;
+  background: rgb(5, 139, 206);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(5, 139, 206, 1) 0%,
+    rgba(5, 139, 206, 0) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(5, 139, 206, 1) 0%,
+    rgba(5, 139, 206, 0) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(5, 139, 206, 1) 0%,
+    rgba(5, 139, 206, 0) 100%
+  );
+}

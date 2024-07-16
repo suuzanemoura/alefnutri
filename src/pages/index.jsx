@@ -1,18 +1,18 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import HeroSection from "../components/Sections/Hero";
 export default function IndexPage() {
   return (
     <>
       <Header />
-      <main className=" min-vh-100 ">
-        <h1 className="text-id-alef-red-300">Alef Rodrigues | Nutricionista</h1>
-        <p className="text-id-alef-blue-100">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error
-          nesciunt quo voluptates. Neque, ducimus. Iure perferendis labore
-          magnam, illum numquam obcaecati dignissimos! Suscipit fugit soluta
-          explicabo non perferendis commodi ullam?
-        </p>
-        <button className="btn btn-id-alef-blue-200">Teste</button>
+      <main>
+        <div className="position-absolute gradient-radial-1">
+          <div className="position-relative gradient-radial" />
+        </div>
+        <HeroSection />
+        <div className="position-absolute gradient-radial-2">
+          <div className="position-relative gradient-radial" />
+        </div>
       </main>
       <Footer />
     </>
