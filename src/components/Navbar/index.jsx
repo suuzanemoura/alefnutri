@@ -3,7 +3,10 @@ import { navBarConfig } from "../../config/header";
 
 export default function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg z-3">
+    <nav
+      className="navbar navbar-expand-lg"
+      style={{ zIndex: 5 }}
+    >
       <div className="container-fluid p-2 p-sm-3 px-lg-6 px-xl-10">
         <HashLink
           smooth
@@ -79,18 +82,27 @@ export default function Navbar() {
                 );
               })}
             </ul>
-            <button
-              className="btn btn-id-alef-red-300 w-100 my-3 d-lg-none"
-              type="button"
+            <HashLink
+              smooth
+              to={navBarConfig.button.link}
+              aria-current="page"
             >
-              <a
-                href={navBarConfig.button.link}
-                className="d-flex gap-2 justify-content-center align-items-center text-decoration-none text-white text-uppercase"
+              <button
+                className="btn btn-id-alef-red-300 w-100 my-3 d-lg-none btn-consulta animate__animated animate__pulse animate__infinite"
+                type="button"
               >
-                {navBarConfig.button.title}
-                <i className={`text-white bi ${navBarConfig.button.icon}`} />
-              </a>
-            </button>
+                <span className="d-flex gap-2 justify-content-center text-decoration-none text-white text-uppercase">
+                  {navBarConfig.button.title}
+                  <i
+                    className={`text-white bi ${navBarConfig.button.icon}`}
+                    style={{
+                      fontSize: "1rem",
+                      WebkitTextStroke: "0.65px",
+                    }}
+                  />
+                </span>
+              </button>
+            </HashLink>
           </div>
         </div>
       </div>
