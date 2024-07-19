@@ -641,8 +641,16 @@
   width: 25% !important;
 }
 
+.w-33 {
+  width: 33% !important;
+}
+
 .w-50 {
   width: 50% !important;
+}
+
+.w-66 {
+  width: 66% !important;
 }
 
 .w-75 {
@@ -2807,6 +2815,27 @@
   .d-sm-none {
     display: none !important;
   }
+  .w-sm-25 {
+    width: 25% !important;
+  }
+  .w-sm-33 {
+    width: 33% !important;
+  }
+  .w-sm-50 {
+    width: 50% !important;
+  }
+  .w-sm-66 {
+    width: 66% !important;
+  }
+  .w-sm-75 {
+    width: 75% !important;
+  }
+  .w-sm-100 {
+    width: 100% !important;
+  }
+  .w-sm-auto {
+    width: auto !important;
+  }
   .flex-sm-fill {
     flex: 1 1 auto !important;
   }
@@ -3631,6 +3660,27 @@
   }
   .d-md-none {
     display: none !important;
+  }
+  .w-md-25 {
+    width: 25% !important;
+  }
+  .w-md-33 {
+    width: 33% !important;
+  }
+  .w-md-50 {
+    width: 50% !important;
+  }
+  .w-md-66 {
+    width: 66% !important;
+  }
+  .w-md-75 {
+    width: 75% !important;
+  }
+  .w-md-100 {
+    width: 100% !important;
+  }
+  .w-md-auto {
+    width: auto !important;
   }
   .flex-md-fill {
     flex: 1 1 auto !important;
@@ -4457,6 +4507,27 @@
   .d-lg-none {
     display: none !important;
   }
+  .w-lg-25 {
+    width: 25% !important;
+  }
+  .w-lg-33 {
+    width: 33% !important;
+  }
+  .w-lg-50 {
+    width: 50% !important;
+  }
+  .w-lg-66 {
+    width: 66% !important;
+  }
+  .w-lg-75 {
+    width: 75% !important;
+  }
+  .w-lg-100 {
+    width: 100% !important;
+  }
+  .w-lg-auto {
+    width: auto !important;
+  }
   .flex-lg-fill {
     flex: 1 1 auto !important;
   }
@@ -5282,6 +5353,27 @@
   .d-xl-none {
     display: none !important;
   }
+  .w-xl-25 {
+    width: 25% !important;
+  }
+  .w-xl-33 {
+    width: 33% !important;
+  }
+  .w-xl-50 {
+    width: 50% !important;
+  }
+  .w-xl-66 {
+    width: 66% !important;
+  }
+  .w-xl-75 {
+    width: 75% !important;
+  }
+  .w-xl-100 {
+    width: 100% !important;
+  }
+  .w-xl-auto {
+    width: auto !important;
+  }
   .flex-xl-fill {
     flex: 1 1 auto !important;
   }
@@ -6106,6 +6198,27 @@
   }
   .d-xxl-none {
     display: none !important;
+  }
+  .w-xxl-25 {
+    width: 25% !important;
+  }
+  .w-xxl-33 {
+    width: 33% !important;
+  }
+  .w-xxl-50 {
+    width: 50% !important;
+  }
+  .w-xxl-66 {
+    width: 66% !important;
+  }
+  .w-xxl-75 {
+    width: 75% !important;
+  }
+  .w-xxl-100 {
+    width: 100% !important;
+  }
+  .w-xxl-auto {
+    width: auto !important;
   }
   .flex-xxl-fill {
     flex: 1 1 auto !important;
@@ -6939,16 +7052,6 @@ header img {
   color: #ff3333;
 }
 
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  height: 39rem;
-  width: 100%;
-}
-
 .hero::before {
   content: "";
   background-image: url("/src/assets/AlefRodriguesNutricionista_Textura.png");
@@ -6986,7 +7089,6 @@ header img {
 .hero-gradient-right {
   width: 100%;
   height: 100%;
-  position: relative;
   background: rgb(5, 23, 53);
   background: -moz-linear-gradient(90deg, rgba(5, 23, 53, 0) 50%, rgba(5, 23, 53, 0.7091211485) 80%, rgb(5, 23, 53) 100%);
   background: -webkit-linear-gradient(90deg, rgba(5, 23, 53, 0) 50%, rgba(5, 23, 53, 0.7091211485) 80%, rgb(5, 23, 53) 100%);
@@ -6997,7 +7099,6 @@ header img {
 .hero-gradient-left {
   width: 100%;
   height: 100%;
-  position: relative;
   background: rgb(5, 23, 53);
   background: -moz-linear-gradient(270deg, rgba(5, 23, 53, 0) 50%, rgba(5, 23, 53, 0.7091211485) 80%, rgb(5, 23, 53) 100%);
   background: -webkit-linear-gradient(270deg, rgba(5, 23, 53, 0) 50%, rgba(5, 23, 53, 0.7091211485) 80%, rgb(5, 23, 53) 100%);
@@ -7014,15 +7115,24 @@ header img {
   align-items: center;
 }
 
-.hero-content img {
-  width: auto;
-  height: 38rem;
-  object-fit: contain;
+.highlight {
+  color: #0694db !important;
+}
+
+.highlight_underline {
+  text-decoration: underline;
+  text-decoration-color: #0694db !important;
+  text-underline-offset: 0.5rem;
 }
 
 .btn-consulta {
-  font-size: 1.15rem !important;
-  margin: 0.5rem 0 !important;
+  font-weight: 600 !important;
+}
+.btn-consulta:hover {
+  background-color: #af0000 !important;
+}
+.btn-consulta:active {
+  background-color: #ff3333 !important;
 }
 
 h1, .h1 {
@@ -7051,7 +7161,7 @@ h1, .h1 {
 .gradient-radial {
   aspect-ratio: 12/5;
   width: 35rem;
-  opacity: 0.25;
+  opacity: 0.3;
   background: rgb(5, 139, 206);
   background: -moz-radial-gradient(circle, rgb(5, 139, 206) 0%, rgba(5, 139, 206, 0) 100%);
   background: -webkit-radial-gradient(circle, rgb(5, 139, 206) 0%, rgba(5, 139, 206, 0) 100%);
