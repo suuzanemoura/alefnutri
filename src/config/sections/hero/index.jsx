@@ -19,6 +19,6 @@ export const heroConfig = {
   button: {
     link: "/",
     title: "Agendar sua consulta!",
-    icon: "bi-box-arrow-up-right",
+    icon: "bi-check2-square",
   },
 };
