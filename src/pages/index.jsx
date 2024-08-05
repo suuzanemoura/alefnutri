@@ -8,7 +8,7 @@ export default function IndexPage() {
     <>
       <Header />
       <main>
-        <div className="position-absolute gradient-radial-1">
+        <div className="w-100 position-absolute gradient-radial-1">
           <div className="position-relative gradient-radial" />
         </div>
         <HeroSection />

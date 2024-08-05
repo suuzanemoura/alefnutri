@@ -134,5 +134,41 @@
     $custom-colors,
     "id-alef-lightblue-500"
   ) !important;
-  text-underline-offset: 0.5rem;
+  text-underline-offset: 0.25rem;
+}
+
+@media (min-width: 1770px) {
+  h1 {
+    font-size: 3rem !important;
+  }
+
+  .description-hero {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  h1 {
+    font-size: 3.5rem !important;
+  }
+
+  .description-hero {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 2280px) {
+  h1 {
+    font-size: 4.5rem !important;
+  }
+
+  .description-hero {
+    font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 768px) {
+  .btn {
+    font-size: 1rem !important;
+  }
 }
